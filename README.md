@@ -1,2 +1,7 @@
 # Hobby-ESP-32
-this is code compiled on my hobby, I have started working on ESP-32 devices in hopes of eventually creating my IoT items so I am not relying on companies that want to use your data.
+
+ESP32 hobby projects and experiments using the Arduino IDE.
+
+This repository contains sketches, wiring notes, and small projects (OLED, animations, sensors, Wi-Fi, etc.) created while learning embedded development and IoT.
+
+The goal is to build **local-first, cloud-optional devices**, avoiding unnecessary dependence on platforms that collect or monetize user data.
