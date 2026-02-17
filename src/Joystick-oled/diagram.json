@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -76.8, "left": -14.36, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled1",
+      "top": 166.34,
+      "left": -134.17,
+      "attrs": { "i2cAddress": "0x3c" }
+    },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick1",
+      "top": 162.6,
+      "left": 187.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn1",
+      "top": -8.6,
+      "left": 119.2,
+      "rotate": 90,
+      "attrs": { "color": "blue", "xray": "1" }
+    },
+    {
+      "type": "wokwi-pushbutton-6mm",
+      "id": "btn2",
+      "top": -8.6,
+      "left": 176.8,
+      "rotate": 90,
+      "attrs": { "color": "red", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "oled1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "esp:GND.1", "oled1:GND", "black", [ "h-86.25", "v96" ] ],
+    [ "oled1:SCL", "esp:22", "gold", [ "v-288", "h182.7", "v86.4" ] ],
+    [ "oled1:SDA", "esp:21", "violet", [ "v-28.8", "h163.27", "v-144" ] ],
+    [ "joystick1:SEL", "esp:32", "orange", [ "h57.6", "v-249.6", "h-316.95" ] ],
+    [ "joystick1:HORZ", "esp:35", "white", [ "h-57.6", "v-115.2", "h-220.8", "v-163.2" ] ],
+    [ "joystick1:VERT", "esp:34", "green", [ "h105.6", "v-288" ] ],
+    [ "joystick1:VCC", "esp:3V3", "red", [ "h-115.2", "v-374.4", "h-115.35" ] ],
+    [ "btn1:2.r", "esp:GND.2", "blue", [ "h-10", "v-66.4" ] ],
+    [ "btn2:2.r", "esp:GND.2", "red", [ "h-19.6", "v-66.4" ] ],
+    [ "btn1:1.l", "esp:25", "blue", [ "h9.6", "v38.4" ] ],
+    [ "btn2:1.l", "esp:26", "red", [ "h9.6", "v48" ] ]
+  ],
+  "dependencies": {}
+}
