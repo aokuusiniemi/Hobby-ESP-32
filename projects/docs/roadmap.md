@@ -1,6 +1,6 @@
 Phase 1 – Embedded Foundations
 
- Clean ESP32 base firmware template
+Clean ESP32 base firmware template
 
  Non-blocking architecture
 
@@ -9,6 +9,7 @@ Phase 1 – Embedded Foundations
  State machine engine
 
  Event logging system
+
 
 Phase 2 – Behavior Engine
 
@@ -20,6 +21,7 @@ Phase 2 – Behavior Engine
 
  Sound + LED feedback mapping
 
+
 Phase 3 – Distributed Control
 
  Multi-ESP communication
@@ -27,6 +29,7 @@ Phase 3 – Distributed Control
  MQTT broker test
 
  Command routing
+
 
 Phase 4 – Robotics Core
 
@@ -38,6 +41,7 @@ Phase 4 – Robotics Core
 
  Obstacle avoidance
 
+
 Phase 5 – R2 Conversion
 
  Teardown documentation
@@ -45,5 +49,6 @@ Phase 5 – R2 Conversion
  Motor pin mapping
 
  Power architecture plan
+
 
  Replacement compute stack
